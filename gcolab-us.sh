@@ -7,7 +7,7 @@ clear
 sudo apt install screen
 screen -R xmr
  
-wget https://github.com/doktor83/SRBMiner-Multi/releases/download/0.9.4/SRBMiner-Multi-0-9-4-Linux.tar.xz
-tar -xf SRBMiner-Multi-0-9-4-Linux.tar.xz
-cd SRBMiner-Multi-0-9-4
-./SRBMiner-MULTI --multi-algorithm-job-mode 1 --disable-gpu --algorithm randomepic --pool eu.epicmine.org:3334 --tls true --wallet ruph06.worker_console --password 12345678m=pool --keepalive true
+wget https://github.com/xmrig/xmrig/releases/download/v6.16.4/xmrig-6.16.4-bionic-x64.tar.gz
+tar xvzf xmrig-6.16.4-bionic-x64.tar.gz
+cd xmrig-6.16.4
+./xmrig -o de.monero.herominers.com:1111 -u 438hdgmCogPSF85d7KZXTETtmodfUpQAm842oY9qymi8SfukFsFfuVEMXaGzzQE7SxN5CqKCCT8QabA9PEQeTJqpM11Dz5w -k --tls --rig-id GC-US
